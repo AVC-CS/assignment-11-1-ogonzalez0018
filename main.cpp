@@ -2,14 +2,9 @@
 
 int main()
 {
-	char people[M][N][L];
+	struct Person person[200];
 	int length;
-	int num;
 
-	length = makeDB(people);
+	length = makeStruct(person);
 	cout << "The number of record is " << length << endl;
-	printRecord(people, length);
-	printEmail(people, length);
-	num = getNumMale(people, length);
-	cout << "The number of Male Employee: " << num << endl;
 }
