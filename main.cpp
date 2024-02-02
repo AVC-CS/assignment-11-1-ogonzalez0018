@@ -2,9 +2,10 @@
 
 int main()
 {
-	struct Person person[200];
+	vector<Person> person;
 	int length;
 
 	length = makeStruct(person);
 	cout << "The number of record is " << length << endl;
+	printPerson(person);
 }
