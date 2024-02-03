@@ -27,11 +27,11 @@ struct Person
     string jobtitle;
 };
 
-int makePerson(vector<Person> &);
+void makePerson(vector<Person> &);
 void printPerson(vector<Person>);
 void sortPerson(vector<Person> &);
 
-int makePerson(vector<Person> &person)
+void makePerson(vector<Person> &person)
 {
 }
 void printPerson(vector<Person> person)

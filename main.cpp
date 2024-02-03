@@ -5,8 +5,8 @@ int main()
 	vector<Person> person;
 	int length;
 
-	length = makePerson(person);
-	cout << "The number of record is " << length << endl;
+	makePerson(person);
+	cout << "The number of record is " << person.size() << endl;
 	printPerson(person);
 	sortPerson(person);
 	printPerson(person);
