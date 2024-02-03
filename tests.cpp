@@ -10,8 +10,8 @@ TEST_CASE("Ex1 ", "[example]")
 	vector<Person> person;
 	int length;
 
-	length = makePerson(person);
-	REQUIRE(length == 100);
+	makePerson(person);
+	REQUIRE(person.size() == 100);
 	printPerson(person);
 	cout << "--------------------------------------------------\n";
 }
@@ -21,7 +21,7 @@ TEST_CASE("Ex2 ", "[example]")
 	vector<Person> person;
 	int length;
 
-	length = makePerson(person);
+	makePerson(person);
 	sortPerson(person);
 	printPerson(person);
 	REQUIRE(person[0].no == 33);
