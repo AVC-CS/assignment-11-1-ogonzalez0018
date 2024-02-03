@@ -7,24 +7,26 @@
 
 TEST_CASE("Ex1 ", "[example]")
 {
-	char people[M][N][L];
+	vector<Person> person;
 	int length;
-	int num;
-	length = makeDB(people);
+
+	length = makePerson(person);
 	REQUIRE(length == 100);
-	printRecord(people, length);
+	printPerson(person);
 	cout << "--------------------------------------------------\n";
-	printEmail(people, length);
 }
 
 TEST_CASE("Ex2 ", "[example]")
 {
-	char people[M][N][L];
+	vector<Person> person;
 	int length;
-	int num;
-	length = makeDB(people);
 
-	num = getNumMale(people, length);
-	REQUIRE(num == 47);
+	length = makePerson(person);
+	sortPerson(person);
+	printPerson(person);
+	REQUIRE(person[0].no == 33);
+	REQUIRE(person[99].no == 70);
+	REQUIRE(person[50].no == 25);
+	REQUIRE(person[75].no == 54);
 	cout << "--------------------------------------------------\n";
 }
